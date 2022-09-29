@@ -1,0 +1,24 @@
+{{page-title "Index"}}
+
+<Jumbo @title="welcome to super rentals" @content={{this.body}} @button={{this.buttonname}} @routename="about"/>
+<br>
+<div class="container">
+<label for="filter">search</label>
+{{!-- <Input id="filter" @type="text" @value={{this.list}} {{on "keyup"  this.filterList }}  /> --}}
+<Input id="filter" @type="text" @value={{this.list}}  />
+</div>
+
+<br>
+<ul>
+{{#each this.filterList as |rental|}}
+<li style="list-style: none;">
+<div class="rentallist">
+<Rentallist @getdata={{rental}}/>
+</div>
+</li>
+<br>
+{{/each}}
+</ul>
+
+
+{{outlet}}

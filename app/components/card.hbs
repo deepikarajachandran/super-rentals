@@ -1,0 +1,25 @@
+<br>
+<div class="container">
+    <div class="card" style="max-width:100% ;">
+        <div class="row g-0">
+            <div class={{if this.buttonclick "col-md-12" "col-md-4" }}>
+                <button {{action this.clickevent}} style="border:none ;">
+                    <img src={{@imgname}} style="height:100% ; width:100%; float:left;" alt="">
+                </button>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <LinkTo class="link2" @route="rentals.mansion" @model={{@titlename}}>
+                        <h3>{{@titlename}}</h3>
+                    </LinkTo>
+                    <div>
+                        <div><b>OWNER:</b>{{@owner}}</div>
+                        <div><b>TYPE:</b>{{@type}}</div>
+                        <div><b>LOCATION:</b>{{@location}}</div>
+                        <div><b>NO.OF.ROOMS:</b>{{@rooms}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

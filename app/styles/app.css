@@ -1,0 +1,63 @@
+#menu{
+    background-color: coral;
+    
+}
+.link {
+    text-decoration: none;
+    color: white;
+    /* pointer-events: none; */
+    
+}
+.link2 {
+    text-decoration: none;
+    color: black;
+    /* pointer-events: none; */
+    
+}
+.link:hover{
+    color: white;
+}
+.rentallist{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin: 1%;
+}
+.detail{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.detailscard{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    align-items: center; */
+     padding: 1%;
+    margin: 1%;
+}
+.detailcard{
+    display: flex;
+    /* flex-direction: column; */
+    flex-basis: 50%;
+}
+
+/* input[type=checkbox] {
+    display: none;
+  }
+  
+img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+  }
+  
+  input[type=checkbox]:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+
+  } */

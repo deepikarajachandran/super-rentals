@@ -1,0 +1,6 @@
+{{page-title "Mansion"}}
+<Jumbo  @title={{this.model.id}} @content={{this.model.description}} @button={{this.buttonname}} @routename="about" />
+<Card  @titlename={{this.model.id}} @imgname={{this.model.image}} @owner={{this.model.attributes.owner}} @type={{this.model.category}}
+@location={{this.model.attributes.city}} @rooms={{this.model.bedrooms}} />
+{{!-- <Map /> --}}
+{{outlet}}
